@@ -23,4 +23,17 @@ describe("Testing Math library", () => {
     const response2 = Math.div(3, 0);
     expect(response2).toBe(false);
   });
+
+  it("contar quantos caracteres tem na string", () => {
+    const response = "DENIED";
+    expect(response).toHaveLength(6);
+  });
+
+  it.only("se possui a propriedade EMAIL", () => {
+    const user = {
+      name: "John Doe",
+      email: "johndoe@example.com",
+    };
+    expect(user).toHaveProperty("email");
+  });
 });
