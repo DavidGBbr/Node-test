@@ -1,6 +1,26 @@
 import { Math } from "./Math";
 
 describe("Testing Math library", () => {
+  beforeEach(() => {
+    //Executa antes de cada teste
+    // ex: abrir conexão ao banco de dados
+  });
+
+  afterEach(() => {
+    //Executa depois de cada teste
+    // ex: fechar conexão ao banco de dados
+  });
+
+  beforeAll(() => {
+    //Executa antes de todos os testes
+    // ex: inicializar variáveis globais
+  });
+
+  afterAll(() => {
+    //Executa depois de todos os testes
+    // ex: destruir variáveis globais
+  });
+
   it("should sum two numbers correctly", () => {
     const response = Math.sum(5, 10);
     expect(response).toBe(15);
